@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #0072bc;
+  .logo {
+    text-decoration: none;
+  }
+  .logo-link {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 26px;
+  }
+  .order {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #f26522;
+    border: none;
+  }
+}

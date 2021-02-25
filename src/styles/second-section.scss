@@ -1,0 +1,31 @@
+.positions {
+  font-size: 20px;
+  text-align: center;
+}
+.list-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .item-headling {
+    font-size: 20px;
+    color: #8e0000;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .item-text {
+    margin-bottom: 10px;
+  }
+  .to-order {
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 700;
+    color: #444444;
+  }
+  .active-btn {
+    color: #06811a;
+  }
+}
