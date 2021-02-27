@@ -8,6 +8,7 @@ $(document).ready(function(){
         fade: true,
         cssEase: 'linear',
         arrows: true,
+        dotsClass: 'dots-class',
         prevArrow: $('.slider-button1'),
         nextArrow: $('.slider-button2')
     });

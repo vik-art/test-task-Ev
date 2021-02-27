@@ -1,3 +1,88 @@
 .promotions {
   display: none;
+  @media screen and(min-width:768px) {
+    display: block;
+    position: relative;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.food {
+  background-color: #6dcff6;
+  h3 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+}
+.dots-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dots-class li {
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.dots-class li button {
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.dots-class li button:hover,
+.dots-class li button:focus {
+  outline: none;
+}
+
+.dots-class li button:hover:before,
+.dots-class li button:focus:before {
+  opacity: 1;
+}
+
+.dots-class li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '';
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.dots-class li.slick-active button:before {
+  border: 1px solid #0072bc;
+}
+.slider-button1,
+.slider-button2 {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+}
+.slider-button1 {
+  left: 28%;
+  bottom: 9%;
+}
+.slider-button2 {
+  right: 28%;
+  bottom: 9%;
 }
