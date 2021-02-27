@@ -1,6 +1,9 @@
-.footer {
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
+footer .footer {
+  @extend %font-face;
   text-align: center;
   height: 40px;
+  @media screen and(min-width:1200px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }

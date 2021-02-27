@@ -3,6 +3,7 @@
   @media screen and(min-width:768px) {
     display: block;
     position: relative;
+    background-color: #6dcff6;
     img {
       display: block;
       width: 100%;
@@ -10,12 +11,17 @@
   }
 }
 .food {
-  background-color: #6dcff6;
+  padding-top: 75px;
+  padding-bottom: 130px;
   h3 {
     text-align: center;
     color: $secondary-text-color;
     font-size: 35px;
     margin-bottom: 20px;
+    @media screen and(min-width:1200px) {
+      font-size: 45px;
+      margin-bottom: 64px;
+    }
   }
 }
 .dots-class {
@@ -23,6 +29,9 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  @media screen and(min-width:1200px) {
+    margin-top: 55px;
+  }
 }
 
 .dots-class li {
@@ -70,19 +79,24 @@
 }
 
 .dots-class li.slick-active button:before {
-  border: 1px solid #0072bc;
+  opacity: 0.6;
 }
 .slider-button1,
 .slider-button2 {
   border: none;
+  outline: none;
   background-color: transparent;
   position: absolute;
+  cursor: pointer;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 .slider-button1 {
-  left: 28%;
-  bottom: 9%;
+  left: 35%;
+  bottom: 130px;
 }
 .slider-button2 {
-  right: 28%;
-  bottom: 9%;
+  right: 35%;
+  bottom: 130px;
 }
