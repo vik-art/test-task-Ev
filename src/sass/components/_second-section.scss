@@ -21,10 +21,10 @@
     width: 100%;
   }
   .item-headling {
+    @extend %font-face;
     font-size: 20px;
     color: #8e0000;
     text-align: center;
-    font-weight: 700;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -32,10 +32,10 @@
     margin-bottom: 10px;
   }
   .to-order {
+    @extend %font-face;
     border: none;
     background-color: transparent;
     font-size: 17px;
-    font-weight: 700;
     color: #444444;
   }
   .active-btn {

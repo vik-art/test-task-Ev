@@ -1,4 +1,4 @@
-import './styles.scss';
+import './sass/styles.scss';
 
 $(document).ready(function(){
     $('.slider1').slick({
