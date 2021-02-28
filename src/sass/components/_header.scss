@@ -3,9 +3,9 @@ header {
 }
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 
   @media screen and(min-width:768px) {
     flex-direction: row;
@@ -29,9 +29,11 @@ header {
     }
   }
   .logo-link {
-    @extend %font-face;
     color: $secondary-text-color;
+
+    @extend %font-face;
     font-size: 26px;
+    line-height: 1.3;
     @media screen and(min-width:768px) {
       margin-left: 20px;
     }
@@ -40,14 +42,17 @@ header {
     }
   }
   .order {
+    display: block;
     margin-top: 10px;
     margin-bottom: 10px;
-    display: block;
     padding: 10px 20px;
-    font-size: 20px;
-    color: $secondary-text-color;
-    background-color: #f26522;
     border: none;
+
+    color: $secondary-text-color;
+    background-color: $first-accent-color;
+
+    font-size: 20px;
+    line-height: 1.1;
     @media screen and (min-width: 1200px) {
       font-size: 26px;
       padding: 20px 40px;
