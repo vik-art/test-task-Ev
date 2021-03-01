@@ -14,6 +14,7 @@
   padding-top: 75px;
   padding-bottom: 130px;
   h3 {
+    margin-bottom: 30px;
     text-align: center;
     color: $secondary-text-color;
     font-size: 35px;
@@ -62,7 +63,7 @@
 }
 
 .dots-class li button:before {
-  font-family: 'slick';
+  font-family: "slick";
   font-size: 6px;
   line-height: 20px;
   position: absolute;
@@ -70,7 +71,7 @@
   left: 0;
   width: 20px;
   height: 20px;
-  content: '';
+  content: "";
   display: block;
   width: 45px;
   height: 45px;
@@ -94,10 +95,22 @@
   margin-bottom: 0;
 }
 .slider-button1 {
-  left: 35%;
+  @media screen and(max-width: 850px) {
+    left: 25%;
+  }
+  @media screen and(min-width: 1400px) {
+    left: 38%;
+  }
+  left: 33%;
   bottom: 130px;
 }
 .slider-button2 {
-  right: 35%;
+  @media screen and(max-width: 850px) {
+    right: 25%;
+  }
+  @media screen and(min-width: 1400px) {
+    right: 38%;
+  }
+  right: 33%;
   bottom: 130px;
 }

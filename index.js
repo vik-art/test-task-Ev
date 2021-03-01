@@ -1,5 +1,3 @@
-import './sass/styles.scss';
-
 $(document).ready(function(){
     $('.slider1').slick({
         dots: true,
@@ -13,3 +11,4 @@ $(document).ready(function(){
         nextArrow: $('.slider-button2')
     });
   });
+

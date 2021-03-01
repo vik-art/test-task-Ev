@@ -15,12 +15,17 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
         <div class="container header">
         <a href="#" class="logo">
-            <img src="./assets/clown-fish.png">
+            <picture>
+                <source srcset="./assets/clown-fish.webp" type="image/webp">
+                <source srcset="./assets/clown-fish.png" type="image/png">
+            <img src="./assets/clown-fish.png" alt="Логотип">
+            </picture>
             <p class="logo-link">Суши-шмастер</p>
         </a>
         <button class="order">Сделать заказ</button>
@@ -41,7 +46,11 @@
                     <div class="food-container">
                     <ul class="js-gallery gallery">
                         <li class="list-item">
-                            <img src="./assets/s3.png" alt="Роллы">
+                            <picture>
+                                <source srcset="./assets/s3.webp" type="image/webp">
+                                <source srcset="./assets/s3.png" type="image/png">
+                                    <img src="./assets/s3.png" alt="Роллы">
+                            </picture>
                             <p class="item-headling">Гринобль ролл</p>
                             <p class="item-text">Закажи сей вкусный ролл,<br>
                                 Он украсит ваший стол,<br>
@@ -50,7 +59,11 @@
                                 <button class="active-btn to-order">Заказать</button>
                         </li>
                         <li class="list-item">
-                            <img src="./assets/s2.png" alt="Роллы">
+                            <picture>
+                                <source srcset="./assets/s2.webp" type="image/webp">
+                                <source srcset="./assets/s2.png" type="image/png">
+                                    <img src="./assets/s2.png" alt="Роллы">
+                            </picture>
                             <p class="item-headling">Оранжад ролл</p>
                             <p class="item-text">Закажи сей вкусный ролл,<br>
                                 Он украсит ваший стол,<br>
@@ -59,7 +72,11 @@
                                 <button disabled class="to-order">Недоступно к заказу</button>
                         </li>
                         <li class="list-item">
-                            <img src="./assets/s1.png" alt="Роллы">
+                            <picture>
+                                <source srcset="./assets/s1.webp" type="image/webp">
+                                <source srcset="./assets/s1.png" type="image/png">
+                                    <img src="./assets/s1.png" alt="Роллы">
+                            </picture>
                             <p class="item-headling">Брауни рол</p>
                             <p class="item-text">Закажи сей вкусный ролл,<br>
                                 Он украсит ваший стол,<br>
@@ -69,7 +86,11 @@
                         </li>
                     </ul>
                     <div class="special-item">
-                        <img src="./assets/s44.png" alt="Роллы" class="special-item-image">
+                        <picture>
+                            <source srcset="./assets/s44.webp" type="image/webp">
+                            <source srcset="./assets/s44.png" type="image/png">
+                                <img src="./assets/s44.png" alt="Роллы" class="special-item-image">
+                        </picture>
                     </div>
                     </div>
                 </div>
@@ -79,13 +100,26 @@
                     <h3>Самые выгодные предложения</h3>
                     <div class="slider1">
                         <div>
-                            <img src="./assets/slide1.png" alt="Дорадо">
+                            <picture>
+                                <source srcset="./assets/slide1.webp" type="image/webp">
+                                <source srcset="./assets/slide1.png" type="image/png">
+                                    <img src="./assets/slide1.png" alt="Дорадо">
+                            </picture>
                         </div>
                         <div>
-                            <img src="./assets/slide2.png" alt="Креветки">
+                            <picture>
+                                <source srcset="./assets/slide2.webp" type="image/webp">
+                                <source srcset="./assets/slide2.png" type="image/png">
+                                    <img src="./assets/slide2.png" alt="Креветки">
+                            </picture>
+                            
                         </div>
                         <div>
-                            <img src="./assets/slide3.png" alt="Селедка">
+                            picture>
+                                <source srcset="./assets/slide3.webp" type="image/webp">
+                                <source srcset="./assets/slide3.png" type="image/png">
+                                    <img src="./assets/slide3.png" alt="Селедка">
+                            </picture>
                         </div>
                     </div>
                     <button class="slider-button1">
@@ -104,5 +138,6 @@
         </script>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
